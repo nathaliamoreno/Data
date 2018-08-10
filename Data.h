@@ -1,22 +1,23 @@
-#ifndef DATAROREIRO1_H_INCLUDED
-#define DATAROREIRO1_H_INCLUDED
+#ifndef DATA_H_INCLUDED
+#define DATA_H_INCLUDED
 
 class Data{
 
 public:
+    int dia, mes, ano;
 
-   Data (int dia, int mes, int ano);
-   int dia, mes, ano;
+    Data (int dia, int mes, int ano);
 
-   int AvancarDia();
- /*  void set_dia(int dia);
-   void set_mes(int mes);
-   void set_ano(int ano);
+    int AvancarDia();
 
-   int get_dia();
-   int get_mes();
-   int get_ano();
-*/
+    void setDia(int dia);
+    void setMes(int mes);
+    void setAno(int ano);
+
+    int getDia();
+    int getMes();
+    int getAno();
+
 };
 
-#endif // DATAROREIRO1_H_INCLUDED
+#endif // DATA_H_INCLUDED
