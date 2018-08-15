@@ -1,4 +1,4 @@
-#include "DATA.h"
+#include "Data.h"
 #include <iostream>
 
 Data::Data(int dia, int mes, int ano){
@@ -25,20 +25,22 @@ int Data::getMes(){
 int Data::getAno(){
     return ano;
  }
-int Data::AvancarDia(){
+void Data::AvancarDia(){
+
+    dia++;
 
     if ( mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes || 12 ){
         if (dia == 32){
             dia = 1;
             mes++;
         }
-    }else if (mes == 2) {
+    }if (mes == 2) {
         if (dia == 29){
             dia = 1;
             mes++;
         }
-    }else {
-        if (dia == 31){
+    }if (mes == 4 || mes == 6 || mes == 9 || mes == 11){
+        if (dia == 30){
             dia = 1;
             mes++;
         }
