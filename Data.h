@@ -7,8 +7,7 @@ public:
     int dia, mes, ano;
 
     Data (int dia, int mes, int ano);
-
-    int AvancarDia();
+    void AvancarDia();
 
     void setDia(int dia);
     void setMes(int mes);
